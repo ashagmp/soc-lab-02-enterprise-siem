@@ -4,15 +4,27 @@
 
 This document records the deployment and configuration of Splunk Enterprise for SOC Lab 02.
 
-## Planned Configuration
+## Server
 
-- Deploy Splunk Enterprise on `splunk01`.
-- Configure Splunk Web.
-- Configure receiving and indexing.
-- Configure log sources.
-- Verify event ingestion.
-- Build security dashboards.
+| Setting | Value |
+|---------|-------|
+| Hostname | splunk01 |
+| IP Address | 192.168.10.40 |
+| Installation Path | /opt/splunk |
+| Web Interface | Port 8000 |
 
-## Status
+## Installation Status
 
-**Not yet configured.**
+Splunk Enterprise has been installed and verified on `splunk01`.
+
+Splunk Web is accessible from the enterprise lab environment.
+
+## Next Steps
+
+- Configure Splunk receiving.
+- Install Universal Forwarders.
+- Configure Windows log collection.
+- Configure Linux log collection.
+- Deploy Sysmon.
+- Verify centralized log ingestion.
+- Create SOC dashboards.

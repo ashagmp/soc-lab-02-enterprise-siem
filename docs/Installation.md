@@ -15,10 +15,6 @@ This document records the installation and configuration of the systems used in 
 | attack01 | Kali Linux | Security Testing Workstation |
 | splunk01 | Ubuntu Server | Splunk Enterprise SIEM |
 
-## Planned Installation
-
-- [ ] Install Splunk Enterprise.
-- [ ] Verify Splunk Web.
 
 ## completed Installation
 
@@ -29,6 +25,9 @@ This document records the installation and configuration of the systems used in 
 - Verified connectivity between `splunk01` and DC01.
 - Verified DNS resolution for `dc01.ashag.local`.
 - Verified Internet connectivity.
+- Installed Splunk Enterprise on `splunk01`.
+- Started and verified the Splunk service.
+- Verified Splunk Web is accessible at `192.168.10.40:8000`.
 
 ## Notes
 
