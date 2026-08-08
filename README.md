@@ -112,8 +112,8 @@ The SIEM environment uses the existing **AshagLab** internal network created in 
 - [X] Configure hostname
 - [X] Configure network
 - [X] Configure static IP
-- [ ] Install Splunk Enterprise
-- [ ] Verify Splunk Web
+- [X] Install Splunk Enterprise
+- [X] Verify Splunk Web
 
 ### Phase 2 - Log Collection
 
