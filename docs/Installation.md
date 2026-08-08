@@ -17,13 +17,18 @@ This document records the installation and configuration of the systems used in 
 
 ## Planned Installation
 
-- [ ] Create `splunk01` virtual machine.
-- [ ] Install Ubuntu Server.
-- [ ] Configure hostname.
-- [ ] Configure network connectivity.
-- [ ] Configure static IP address.
 - [ ] Install Splunk Enterprise.
 - [ ] Verify Splunk Web.
+
+## completed Installation
+
+- Installed Ubuntu Server on `splunk01`.
+- Configured the hostname as `splunk01`.
+- Configured the static internal IP address `192.168.10.40`.
+- Configured DC01 (`192.168.10.10`) as the DNS server.
+- Verified connectivity between `splunk01` and DC01.
+- Verified DNS resolution for `dc01.ashag.local`.
+- Verified Internet connectivity.
 
 ## Notes
 

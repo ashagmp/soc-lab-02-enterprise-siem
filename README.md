@@ -107,11 +107,11 @@ The SIEM environment uses the existing **AshagLab** internal network created in 
 
 ### Phase 1 - SIEM Deployment
 
-- [ ] Create `splunk01` virtual machine
-- [ ] Install Ubuntu Server
-- [ ] Configure hostname
-- [ ] Configure network
-- [ ] Configure static IP
+- [X] Create `splunk01` virtual machine
+- [X] Install Ubuntu Server
+- [X] Configure hostname
+- [X] Configure network
+- [X] Configure static IP
 - [ ] Install Splunk Enterprise
 - [ ] Verify Splunk Web
 
