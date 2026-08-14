@@ -28,6 +28,9 @@ This document records the installation and configuration of the systems used in 
 - Installed Splunk Enterprise on `splunk01`.
 - Started and verified the Splunk service.
 - Verified Splunk Web is accessible at `192.168.10.40:8000`.
+- Configured Splunk receiving on TCP port `9997`.
+- Verified that Splunk is listening on port `9997`.
+- Verified connectivity to the Splunk receiving port from the lab network.
 
 ## Notes
 
