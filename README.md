@@ -114,13 +114,15 @@ The SIEM environment uses the existing **AshagLab** internal network created in 
 - [X] Configure static IP
 - [X] Install Splunk Enterprise
 - [X] Verify Splunk Web
+- [X] Configure Splunk receiving port 9997
+- [X] Troubleshoot and resolve Splunk disk-space issue
 
 ### Phase 2 - Log Collection
 
-- [ ] Install Universal Forwarder on DC01
-- [ ] Install Universal Forwarder on HR-PC01
-- [ ] Install Universal Forwarder on FIN-PC01
-- [ ] Install Universal Forwarder on web01
+- [X] Install Universal Forwarder on DC01
+- [X] Install Universal Forwarder on HR-PC01
+- [X] Install Universal Forwarder on FIN-PC01
+- [X] Install Universal Forwarder on web01
 - [ ] Configure Windows Event Log collection
 - [ ] Configure Linux log collection
 - [ ] Verify centralized log ingestion
@@ -165,21 +167,40 @@ configs/
 
 ---
 
-
 ## Project Status
 
 **In Progress**
 
-The current phase is deployment of the dedicated `splunk01` SIEM server.
+### Completed
+
+* Enterprise Splunk server deployed on `splunk01`.
+* Splunk Web successfully configured and verified.
+* Splunk receiving port `9997` configured.
+* Universal Forwarder installed and connected on:
+
+  * `DC01`
+  * `HR-PC01`
+  * `FIN-PC01`
+  * `web01`
+* Splunk disk-space issue identified and resolved.
+
+### Current Phase
+
+The lab is currently moving from **Universal Forwarder deployment** to **log source configuration and centralized log ingestion**.
 
 ---
 
 ## Documentation
 
-Detailed implementation, configuration, and troubleshooting information is available in the `docs/` directory.
+Detailed implementation, troubleshooting information is available in the `docs/` directory.
 
 ---
 
 ## License
 
 This project is intended for educational and portfolio purposes.
+
+```
+```
+
+

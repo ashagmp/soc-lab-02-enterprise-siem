@@ -32,11 +32,25 @@ Splunk Enterprise is configured to receive data from Universal Forwarders.
 
 The receiving port was verified with `ss` on `splunk01` and connectivity was tested from another lab machine.
 
+Connectivity to port 9997 was successfully tested from the lab endpoints.
+
+| Host     | Operating System    | Status |
+| -------- | ------------------- | ------ |
+| DC01     | Windows Server 2022 | Active |
+| HR-PC01  | Windows 11 Pro      | Active |
+| FIN-PC01 | Windows 11 Pro      | Active |
+| web01    | Ubuntu Server       | Active |
+
+
+The Universal Forwarders are configured to send data to:
+
+192.168.10.40:9997
+
 ## Next Steps
 
-- Install Universal Forwarders.
-- Configure Windows log collection.
+- Configure Windows Event Log collection.
 - Configure Linux log collection.
-- Deploy Sysmon.
+- Deploy Sysmon on Windows systems.
+- Forward Sysmon events to Splunk.
 - Verify centralized log ingestion.
-- Create SOC dashboards.
+- Create initial SOC monitoring dashboards.

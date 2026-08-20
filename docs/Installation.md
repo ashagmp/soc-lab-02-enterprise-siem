@@ -32,8 +32,27 @@ This document records the installation and configuration of the systems used in 
 - Verified that Splunk is listening on port `9997`.
 - Verified connectivity to the Splunk receiving port from the lab network.
 
+### Universal Forwarders
+
+- Installed Universal Forwarder on `DC01`.
+- Configured `DC01` to forward to `192.168.10.40:9997`.
+- Verified the Universal Forwarder service and forwarding connection on `DC01`.
+
+- Installed Universal Forwarder on `HR-PC01`.
+- Configured `HR-PC01` to forward to `192.168.10.40:9997`.
+- Verified the Universal Forwarder service and forwarding connection on `HR-PC01`.
+
+- Installed Universal Forwarder on `FIN-PC01`.
+- Configured `FIN-PC01` to forward to `192.168.10.40:9997`.
+- Verified the Universal Forwarder service and forwarding connection on `FIN-PC01`.
+
+- Installed Universal Forwarder on `web01`.
+- Configured `web01` to forward to `192.168.10.40:9997`.
+- Verified the Universal Forwarder service and forwarding connection on `web01`.
+
 ## Notes
 
 - `DC01` remains dedicated to Active Directory, DNS, and DHCP.
 - `web01` remains the Linux web server and will be used as a Linux log source.
 - `splunk01` is a dedicated SIEM server.
+- `attack01` is reserved for security testing and does not currently run a Universal Forwarder.
